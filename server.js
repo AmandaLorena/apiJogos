@@ -24,16 +24,12 @@ app.post('/login', (req, res) => {
 
   // Credenciais corretas conforme especificação
   if (email === 'usuario@esoft.com' && password === 'Abc123') {
-    const token = uuidv4()
-    return res.status(200).json({
-      token
+    return res.status(200).json({ 
+      token: '550e8400-e29b-41d4-a716-446655440000' 
     })
   }
 
-  // Credenciais inválidas
-  return res.status(401).json({
-    erro: 'Credenciais inválidas'
-  })
+  return res.status(401).json({ erro: 'Credenciais inválidas' })
 })
 
 // ===== Rotas de Jogos =====
