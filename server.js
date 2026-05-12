@@ -62,3 +62,8 @@ process.on('SIGINT', () => {
   console.log('\n\n📴 Encerrando servidor...')
   process.exit(0)
 })
+
+process.on('SIGTERM', () => {
+  console.log('\n\n📴 Encerrando servidor (SIGTERM)...')
+  process.exit(0)
+})
