@@ -42,18 +42,19 @@ app.use((req, res) => {
   })
 })
 
-// ===== Iniciar Servidor =====
+// ===== Iniciar Servidor =======
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
   console.log('')
   console.log('=====================================')
-  console.log('🎮 API BIBLIOTECA DE JOGOS')
+  console.log('🎮 API BIBLIOTECA DE JOGOS BY LOBO(A) DE WALL STREET')
   console.log('=====================================')
   console.log(`✅ Servidor rodando em: http://localhost:${PORT}`)
   console.log(`📚 Base URL: http://localhost:${PORT}`)
   console.log('=====================================')
   console.log('')
+  
 })
 
 // Graceful shutdown
